@@ -1,0 +1,65 @@
+/*重製網頁*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*製作一個滿版容器*/
+.container {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/*切版成三個區塊*/
+.header {
+    display: flex;
+    flex: 1;
+    background-color: rgb(181, 185, 246);
+    width: 100%;
+    height: 10%;
+
+}
+.body {
+    display: flex;
+    flex: 9;
+    width: 100%;
+    height: 90%;
+    flex-direction: row;
+}
+.sidebar {
+    flex: 1;
+    background-color: rgb(228, 212, 255);
+    text-align:center;
+}
+.main {
+    flex: 5;
+    background-color: rgb(250, 250, 250);
+}
+
+.datetime {
+    flex-direction:row-reverse;
+    flex: 1;
+    background-color: rgb(250, 250, 250);
+}
+
+
+/*Sidebar中添加的屬性*/
+ul {
+    /* 清除list圓點 */
+    list-style: none;
+}
+#list{
+    /* 給list底色 */
+    margin: 0;
+    border: 0;
+    padding: 0;
+    margin: 15;
+}
+
+/* 隱藏列表 */
+#list > ul li ul{
+    display: none;
+}
