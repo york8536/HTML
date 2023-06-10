@@ -18,7 +18,7 @@ $(function cpt_onclick(){
 //在main中開啟部落格
  $(function blg_onclick(){
     $("#blg").click(function(){
-            $(".main").load("../部落格.htmls");
+            $(".main").load("../部落格.html");
         })
  })
 
