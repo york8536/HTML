@@ -1,6 +1,32 @@
 var test = $('#list');
 console.log("1");
 
+//回首頁
+$(function bth_onclick(){
+    $("#BackToHome").click(function(){
+        $(".container").load("ToDoList.html");
+        })
+ })
+
+//列表區塊 展示與隱藏
+$(function(){
+    var sidebar_on = true;
+    $("#sidebar_toggle").click(function(){
+            if(sidebar_on == true){
+                $(".sidebar").hide();
+                sidebar_on = false;
+                $("#sidebar_toggle").text("展開");
+
+            }
+            else{
+                $(".sidebar").show();
+                sidebar_on = true;
+                $("#sidebar_toggle").text("收起");
+            }
+    })
+
+})
+
 //列表 展示與隱藏
 $(function(){
     $("#list > ul > li").click(function(){
@@ -8,6 +34,7 @@ $(function(){
     })
 
 })
+
 //在main中開啟計算機 
 $(function cpt_onclick(){
     $("#cpt").click(function(){
@@ -30,15 +57,15 @@ $(function cpt_onclick(){
     });
 });
 
+//日期時間
 function updateDateTime() {
-    var datetimeElement = $("#datetime");
+    var datetimeElement = $(".datetime");
     var currentDateTime = new Date();
     datetimeElement.text(currentDateTime.toLocaleString());
   }
   
   setInterval(updateDateTime, 1000);
 
-// $(".cpt").click(function(){    })
 
 
 

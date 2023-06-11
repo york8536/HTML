@@ -13,15 +13,31 @@
     flex-direction: column;
 }
 
-/*切版成三個區塊*/
+/*TOP BAR*/
 .header {
     display: flex;
     flex: 1;
-    background-color: rgb(181, 185, 246);
+    background-color: rgb(96, 82, 156);
     width: 100%;
     height: 10%;
-
 }
+.box{
+    flex: 20;
+}
+.sidebar_toggle_box{
+    margin: 30px;
+}
+.datetime {
+    color: aliceblue;
+    margin: 30px;
+    text-align:left;
+    flex: 3;
+}
+.BackToHome_box{
+    margin: 30px;
+}
+
+/*BODY*/
 .body {
     display: flex;
     flex: 9;
@@ -31,19 +47,17 @@
 }
 .sidebar {
     flex: 1;
-    background-color: rgb(228, 212, 255);
+    background-color: rgb(205, 184, 241);
     text-align:center;
 }
 .main {
-    flex: 5;
+    flex: 10;
     background-color: rgb(250, 250, 250);
+    color: brown;
+    text-align:center
 }
 
-.datetime {
-    flex-direction:row-reverse;
-    flex: 1;
-    background-color: rgb(250, 250, 250);
-}
+
 
 
 /*Sidebar中添加的屬性*/
