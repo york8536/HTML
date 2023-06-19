@@ -4,7 +4,7 @@ console.log("1");
 //回首頁
 $(function bth_onclick(){
     $("#BackToHome").click(function(){
-        $(".container").load("ToDoList.html");
+        $(".container").load("index.html");
         })
  })
 
