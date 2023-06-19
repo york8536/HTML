@@ -3,10 +3,12 @@ console.log("1");
 
 //回首頁
 $(function bth_onclick(){
-    $("#BackToHome").click(function(){
-        $(".container").load("index.html");
-        })
- })
+    $("#BackToHome").click(function() {
+      $("#main").html("首頁<br>首頁<br>首頁<br>首頁");
+    });
+});
+    
+
 
 //列表區塊 展示與隱藏
 $(function(){
@@ -25,7 +27,7 @@ $(function(){
             }
     })
 
-})
+});
 
 //列表 展示與隱藏
 $(function(){
@@ -33,21 +35,21 @@ $(function(){
             $(this).children("ul").toggle();
     })
 
-})
+});
 
 //在main中開啟計算機 
 $(function cpt_onclick(){
     $("#cpt").click(function(){
             $(".main").load("../計算機.html");
         })
- })
+ });
 
 //在main中開啟部落格
  $(function blg_onclick(){
     $("#blg").click(function(){
             $(".main").load("../部落格.html");
         })
- })
+ });
 
 //在main中開啟外部網頁
  $(document).ready(function() {
